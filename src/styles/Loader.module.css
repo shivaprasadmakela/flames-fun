@@ -1,0 +1,17 @@
+.loaderContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+
+.cupid {
+  width: 120px;
+  height: auto;
+  margin-top: 10px;
+}

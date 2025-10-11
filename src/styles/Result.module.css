@@ -1,0 +1,124 @@
+.container {
+  height: 100vh;
+  display: flex;
+  width: 100vw;
+  overflow: auto;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+}
+.mainResultConteiner{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.text {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.resultBox {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  margin: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.resultBox h2 {
+  color: #ff4d6d;
+  font-size: 2rem;
+}
+
+.meaning {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.button {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #ff1e56;
+}
+
+
+.explainBox {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 1.2rem 1.5rem;
+  border-radius: 15px;
+  margin-top: 1.2rem;
+
+  text-align: left;
+  color: #333;
+  font-size: 0.95rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.explainBox h3 {
+  color: #ff4d6d;
+  margin-bottom: 0.8rem;
+}
+
+.stepsList {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.8rem 0;
+}
+
+.stepsList li {
+  margin-bottom: 0.5rem;
+  background: rgba(255, 77, 109, 0.1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+}
+
+.summary {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #444;
+  text-align: center;
+}
+
+.step {
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-left: 4px solid #ff4d6d;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+}
+.allSteps{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.step h4 {
+  color: #ff4d6d;
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+}
+
+.step p {
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
