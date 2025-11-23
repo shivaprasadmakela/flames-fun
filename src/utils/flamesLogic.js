@@ -50,3 +50,37 @@ export function getFlamesResult(name1, name2) {
     common,
   };
 }
+
+export function calculateLovePercentage(name1, name2) {
+  const combined = (name1 + name2).toLowerCase();
+  let sum = 0;
+  for (let i = 0; i < combined.length; i++) {
+    sum += combined.charCodeAt(i);
+  }
+  // Pseudo-random but deterministic based on names
+  return (sum % 101);
+}
+
+export function getZodiacCompatibility(sign1, sign2) {
+  // Simplified compatibility logic
+  if (!sign1 || !sign2) return null;
+  
+  const compatibility = {
+    "Aries": ["Leo", "Sagittarius", "Gemini", "Aquarius"],
+    "Taurus": ["Virgo", "Capricorn", "Cancer", "Pisces"],
+    "Gemini": ["Libra", "Aquarius", "Aries", "Leo"],
+    "Cancer": ["Scorpio", "Pisces", "Taurus", "Virgo"],
+    "Leo": ["Aries", "Sagittarius", "Gemini", "Libra"],
+    "Virgo": ["Taurus", "Capricorn", "Cancer", "Scorpio"],
+    "Libra": ["Gemini", "Aquarius", "Leo", "Sagittarius"],
+    "Scorpio": ["Cancer", "Pisces", "Virgo", "Capricorn"],
+    "Sagittarius": ["Aries", "Leo", "Libra", "Aquarius"],
+    "Capricorn": ["Taurus", "Virgo", "Scorpio", "Pisces"],
+    "Aquarius": ["Gemini", "Libra", "Aries", "Sagittarius"],
+    "Pisces": ["Cancer", "Scorpio", "Taurus", "Capricorn"]
+  };
+
+  if (compatibility[sign1]?.includes(sign2)) return "High Compatibility! 🌟";
+  if (sign1 === sign2) return "Good Match! ✨";
+  return "Interesting Match! 🤔";
+}

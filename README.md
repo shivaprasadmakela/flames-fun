@@ -1,16 +1,90 @@
-# React + Vite
+# 🔥 FLAMES Fun - Relationship Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**FLAMES Fun** is a modern, interactive web application that predicts the relationship compatibility between two people using the classic "FLAMES" algorithm.
 
-Currently, two official plugins are available:
+Built with **React + Vite**, this project features a premium **Glassmorphism UI**, smooth animations, and fun interactive elements.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![FLAMES Fun Preview](/public/vite.svg) <!-- You can replace this with a real screenshot later -->
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **💘 FLAMES Algorithm**: Calculates the relationship status (Friends, Lovers, Affection, Marriage, Enemies, Siblings).
+- **❤️ Love Meter**: Displays a compatibility percentage alongside the result.
+- **🌟 Zodiac Compatibility**: Optional inputs to check how your star signs align.
+- **📜 History Tab**: Keeps track of your last 10 results (persisted locally).
+- **📤 Share Results**: Share your fate with friends via the native share sheet or clipboard.
+- **🔊 Sound Effects**: Fun audio feedback for interactions and results.
+- **🎉 Celebration Effects**: Confetti animations for "Lovers" and "Marriage" results.
+- **🎨 Premium UI**: A stunning interface with glassmorphism cards, animated backgrounds, and `framer-motion` transitions.
+- **📱 Mobile Responsive**: Optimized for all screen sizes.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: CSS Modules, Vanilla CSS (Glassmorphism)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Effects**: [Canvas Confetti](https://www.npmjs.com/package/canvas-confetti)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **State Management**: React Hooks (`useState`, `useEffect`)
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1.  **Clone the repository** (or download the source code):
+    ```bash
+    git clone <repository-url>
+    cd flames-fun
+    ```
+
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server**:
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open the app**:
+    Click the link shown in the terminal (usually `http://localhost:5173`).
+
+## 📂 Project Structure
+
+```
+flames-fun/
+├── public/              # Static assets (GIFs, images)
+├── src/
+│   ├── components/      # Reusable components (Loader, HistoryModal, etc.)
+│   ├── pages/           # Main pages (Home, Result)
+│   ├── styles/          # CSS Modules for styling
+│   ├── utils/           # Helper functions (flamesLogic, SoundManager)
+│   ├── App.jsx          # Main application component
+│   └── main.jsx         # Entry point
+├── package.json         # Dependencies and scripts
+└── README.md            # Project documentation
+```
+
+## 🎮 How to Play
+
+1.  **Enter Names**: Type your name and your crush's name.
+2.  **Select Zodiac (Optional)**: Choose your star signs for an extra compatibility check.
+3.  **Find Your Fate**: Click the button and watch the magic happen!
+4.  **View Details**: Click "See How It Happened" to understand the calculation.
+5.  **Share**: Show off your result to your friends!
+
+## 🤝 Contributing
+
+Feel free to fork this project and submit pull requests for any improvements or new features!
+
+---
+
+Made with ❤️ by **Antigravity** & **You**!
